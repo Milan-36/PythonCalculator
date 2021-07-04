@@ -21,17 +21,21 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.add(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
-  #  def test_subtract_method_calculator(self):
-       # test_subtraction_data = CsvReader('/src/csv/Unit_Test_Subtraction.csv').data
-        #for row in test_subtraction_data:
-         #   self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
-          #  self.assertEqual(self.calculator.result, int(row['Result']))
+
+    def test_subtract_method_calculator(self):
+        test_subtraction_data = CsvReader('/src/csv/Unit_Test_Subtraction.csv').data
+        for row in test_subtraction_data:
+            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
+
 
     def test_multiple_method_calculator(self):
         test_multiplication_data = CsvReader('/src/csv/Unit_Test_Multiplication.csv').data
         for row in test_multiplication_data:
             self.assertEqual(self.calculator.multiple(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
+
+
 
 if __name__ == '__main__':
     unittest.main()

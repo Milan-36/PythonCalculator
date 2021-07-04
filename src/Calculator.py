@@ -7,16 +7,13 @@ def subtraction(a, b):
 def multiplication(a, b):
     return int(a) * int(b)
 
-
 def division(a, b):
     return int(b) / int(a)
-
 
 def square(a):
     return int(a) * int(a)
 
-
-def squareRoot(a):
+def square_root(a):
     return int(a) ** (1/2)
 
 class Calculator:
