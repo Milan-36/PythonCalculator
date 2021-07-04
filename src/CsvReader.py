@@ -5,7 +5,7 @@ from pprint import pprint
 def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
 
-
+# to read the csv file and convert the data into list, and dictionary to store in memory.
 class CsvReader:
     data = []
 
