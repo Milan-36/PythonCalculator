@@ -1,8 +1,23 @@
 def addition(a, b):
-    return a + b
+    return int(a) + int(b)
 
 def subtraction(a, b):
-    return a - b
+    return int(b) - int(a)
+
+def multiplication(a, b):
+    return int(a) * int(b)
+
+
+def division(a, b):
+    return int(b) / int(a)
+
+
+def square(a):
+    return int(a) * int(a)
+
+
+def squareRoot(a):
+    return int(a) ** (1/2)
 
 class Calculator:
     result = 0
@@ -15,5 +30,9 @@ class Calculator:
         return self.result
 
     def subtract(self, a, b):
+        self.result = subtraction(a, b)
+        return self.result
+
+    def multiple(self, a, b):
         self.result = subtraction(a, b)
         return self.result
