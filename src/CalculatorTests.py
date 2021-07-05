@@ -36,6 +36,11 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, int(row['Result']))
 
 
+    def test_divide_method_calculator(self):
+        test_division_data = CsvReader('/src/csv/Unit_Test_Division.csv').data
+        for row in test_division_data:
+            self.assertAlmostEqual(self.calculator.divide(row['Value 1'], row['Value 2']), float(row['Result']))
+            self.assertAlmostEqual(self.calculator.result, float(row['Result']))
 
 if __name__ == '__main__':
     unittest.main()
