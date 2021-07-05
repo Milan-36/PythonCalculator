@@ -3,7 +3,9 @@
 This is **Project 1** of **IS 601**. A calculator using Python.
 
 ## Description:
-The calculator is one application that we all use in our day to day lives. This **PythonCalculator** is Python program using principles of automated testing. It performs basic arithmetic operations. I Learned to use static methods, object methods, object attributes/properties. And also use the CSV files to load data for unit tests. There's each file to test the associated operation. 
+* The calculator is one application that we all use in our day to day lives. This **PythonCalculator** is Python program using principles of automated testing.
+* It performs basic arithmetic operations. I Learned to use static methods, object methods, object attributes/properties.
+* And also used the CSV files to load data for unit tests. There's each file to test the associated operation. 
 
 ## Operations:
 * Addition,
@@ -13,7 +15,7 @@ The calculator is one application that we all use in our day to day lives. This 
 * Square,
 * Square root
 
-## Resources reuqired to run the Unit tests are,
+## Resources required  to run the Unit tests are,
 
 * [Calculator.py](https://github.com/Milan-36/PythonCalculator/blob/master/src/Calculator.py) (It contians all python function to perform arithmetic operations).
 * [CalculatorTests.py](https://github.com/Milan-36/PythonCalculator/blob/master/src/CalculatorTests.py) (Unit Test file to perfom individual tests of source code).
