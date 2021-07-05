@@ -1,6 +1,6 @@
 # PythonCalculator
 
-This is **Project 1** of **IS 601**. A calculator using Python.
+This is **Project 1** of **IS 601**. A Python program using principles of automated testing..
 
 ## Description:
 * The calculator is one application that we all use in our day to day lives. This **PythonCalculator** is Python program using principles of automated testing.
