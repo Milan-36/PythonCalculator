@@ -1,0 +1,10 @@
+class StaticVariables:
+    Addition_csv = "/src/csv/Unit_Test_Addition.csv"
+    Subtraction_csv = "/src/csv/Unit_Test_Subtraction.csv"
+    Multiplication_csv = "/src/csv/Unit_Test_Multiplication.csv"
+    Division_csv = "/src/csv/Unit_Test_Division.csv"
+    Square_csv = "/src/csv/Unit_Test_Square.csv"
+    SquareRoot_csv = "/src/csv/Unit_Test_SquareRoot.csv"
+    val1 = "Value 1"
+    val2 = "Value 2"
+    result = "Result"
