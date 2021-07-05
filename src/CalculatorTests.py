@@ -21,7 +21,6 @@ class MyTestCase(unittest.TestCase):
         for row in test_addition_data:
             self.assertEqual(self.calculator.add(row[StaticVariables.val1], row[StaticVariables.val2]), int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
-            pprint(row)
 
     def test_subtract_method_calculator(self):
         test_subtraction_data = CsvReader('/src/csv/Unit_Test_Subtraction.csv').data
