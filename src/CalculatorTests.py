@@ -2,7 +2,6 @@ import unittest
 from Calculator import Calculator
 from CsvReader import CsvReader
 from StaticVariables import StaticVariables
-from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
@@ -54,7 +53,6 @@ class MyTestCase(unittest.TestCase):
         for row in test_square_root_data:
             self.assertAlmostEqual(self.calculator.sqrt(row[StaticVariables.val1]), float(row[StaticVariables.result]))
             self.assertAlmostEqual(self.calculator.result, float(row[StaticVariables.result]))
-            pprint(row)
 
 if __name__ == '__main__':
     unittest.main()
