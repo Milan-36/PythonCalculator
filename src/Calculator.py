@@ -31,5 +31,5 @@ class Calculator:
         return self.result
 
     def multiple(self, a, b):
-        self.result = subtraction(a, b)
+        self.result = multiplication(a, b)
         return self.result
