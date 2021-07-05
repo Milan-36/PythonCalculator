@@ -41,3 +41,7 @@ class Calculator:
     def sq(self, a):
         self.result = square(a)
         return self.result
+
+    def sqrt(self, a):
+        self.result = square_root(a)
+        return self.result
