@@ -22,34 +22,34 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
 
     def test_subtract_method_calculator(self):
-        test_subtraction_data = CsvReader('/src/csv/Unit_Test_Subtraction.csv').data
+        test_subtraction_data = CsvReader(StaticVariables.Subtraction_csv).data
         for row in test_subtraction_data:
             self.assertEqual(self.calculator.subtract(row[StaticVariables.val1], row[StaticVariables.val2]),
                              int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
 
     def test_multiple_method_calculator(self):
-        test_multiplication_data = CsvReader('/src/csv/Unit_Test_Multiplication.csv').data
+        test_multiplication_data = CsvReader(StaticVariables.Multiplication_csv).data
         for row in test_multiplication_data:
             self.assertEqual(self.calculator.multiple(row[StaticVariables.val1], row[StaticVariables.val2]),
                              int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
 
     def test_divide_method_calculator(self):
-        test_division_data = CsvReader('/src/csv/Unit_Test_Division.csv').data
+        test_division_data = CsvReader(StaticVariables.Division_csv).data
         for row in test_division_data:
             self.assertAlmostEqual(self.calculator.divide(row[StaticVariables.val1], row[StaticVariables.val2]),
                                    float(row[StaticVariables.result]))
             self.assertAlmostEqual(self.calculator.result, float(row[StaticVariables.result]))
 
     def test_square_method_calculator(self):
-        test_square_data = CsvReader('/src/csv/Unit_Test_Square.csv').data
+        test_square_data = CsvReader(StaticVariables.Square_csv).data
         for row in test_square_data:
             self.assertEqual(self.calculator.sq(row[StaticVariables.val1]), int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
 
     def test_square_root_method_calculator(self):
-        test_square_root_data = CsvReader('/src/csv/Unit_Test_Square_Root.csv').data
+        test_square_root_data = CsvReader(StaticVariables.SquareRoot_csv).data
         for row in test_square_root_data:
             self.assertAlmostEqual(self.calculator.sqrt(row[StaticVariables.val1]), float(row[StaticVariables.result]))
             self.assertAlmostEqual(self.calculator.result, float(row[StaticVariables.result]))
